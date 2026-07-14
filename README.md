@@ -17,7 +17,6 @@ This repository contains the dataset and analysis scripts supporting the paper:
 
 > **"Greater Radiative Efficiency of Indian Anthropogenic CO₂ Relative to China in the Early Transport Stage"**
 
-Published in *Atmosphere* (MDPI).
 
 ### Key Findings
 
@@ -28,9 +27,9 @@ Past research on CO₂ greenhouse effects has mostly relied on the **globally un
 - **libRadtran (v2.0.6)** for offline longwave radiative transfer calculation
 
 **Headline Results:**
-- Global annual mean **Radiative Efficiency (RE)** in 2010: **China = 3.15 W m⁻²**, **India = 3.46 W m⁻²**
+- Global annual mean **Radiative Efficiency (RE)** in 2010: **China = 3.15 mW/m2/GtC**, **India = 3.46 mW/m2/GtC**
 - India's RE exceeds China's by **~9.8%**
-- India's maximum local annual mean RE (~10.0 W m⁻²) is approximately **1.8×** that of China (~5.5 W m⁻²)
+- India's maximum local annual mean RE (~10.0 mW/m2/GtC) is approximately **1.8×** that of China (~5.5 mW/m2/GtC)
 - The RE difference is driven by: warmer underlying surface temperature, colder upper-air transport, and lower cloud water path along India's CO₂ transport pathway — these three factors overcome the stronger water vapor masking effect
 
 ---
@@ -68,12 +67,12 @@ Column-averaged dry-air mole fraction of CO₂ (XCO₂) contributed by China and
 | Variables | `xco2_china`, `xco2_india` (units: ppm) |
 
 ### Fig3_CVw_daily_data.nc
-Mass-weighted coefficient of variation (CVw) — quantifies the spatial uniformity of CO₂ mixing globally on a daily basis.
+Mass-weighted coefficient of variation (CV) — quantifies the spatial uniformity of CO₂ mixing globally on a daily basis.
 
 | Dimension | Description |
 |-----------|-------------|
 | `time` | Daily (2010–2012) |
-| Variables | `cvw_china`, `cvw_india` (dimensionless) |
+| Variables | `cv_china`, `cv_india` (dimensionless) |
 
 ### Fig4_Vertical_Mass_monthly_mesh.nc
 Vertical mass distribution (mass fraction per layer) of CO₂ emitted from China and India.
@@ -91,7 +90,7 @@ Annual mean TOA longwave radiative effect efficiency (RE) for China and India CO
 |-----------|-------------|
 | `lon` | Longitude (1° × 1°) |
 | `lat` | Latitude (1° × 1°) |
-| Variables | `re_china`, `re_india` (units: W m⁻²) |
+| Variables | `re_china`, `re_india` (units: mW/m2/GtC) |
 
 ### Fig6_moteo_Means_monthly.nc
 Mass-weighted annual mean meteorological factors along CO₂ transport pathways.
@@ -164,8 +163,8 @@ This dataset is licensed under the [Creative Commons Attribution 4.0 Internation
 
 ### 核心发现
 
-- 2010年全球年均RE：中国 **3.15 W m⁻²**，印度 **3.46 W m⁻²**，印度高出约 **9.8%**
-- 局地最大年均RE：印度（~10.0 W m⁻²）约为中国（~5.5 W m⁻²）的 **1.8 倍**
+- 2010年全球年均RE：中国 **3.15 mW/m2/GtC**，印度 **3.46 mW/m2/GtC**，印度高出约 **9.8%**
+- 局地最大年均RE：印度（~10.0 mW/m2/GtC）约为中国（~5.5 mW/m2/GtC）的 **1.8 倍**
 - 印度排放CO₂覆盖更高地表温度区域，且被深对流输送至更冷的高层大气，输送路径上云水含量较低——这三个因素共同超过了水汽掩蔽效应的抑制作用，导致印度RE更高
 - 研究证明：**均匀混合假设在短时间尺度上存在局限**，CO₂非均匀分布阶段的RE强度和空间格局受源区地理位置和三维输送路径共同控制
 
